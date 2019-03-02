@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Facebook | Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Facebook login page">
+        <meta name="keywords" content="Facebook, most popular networking site, social network, login page">
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+        
+    </head>
+    <body>
+        <header>
+            <div id="logo"><a href="index.html"><img src="images/logo1.png" alt="Facebook logo"></a></div>
+               <form id="formLogin" class="container"> 
+                <div class="loginBar ">
+                    <label>Email hoặc điện thoại</label>
+                <input type="text" id="loginUserName">
+                </div>
+                <div class="loginBar ">
+                    <label>Mật khẩu</label>
+                <input type="password" id="loginPassword">
+                <div id="underlie"><a href="#">Quên tài khoản?</a></div>
+                </div>
+                <input id="upperBtn" type="submit" value="Đăng nhập">
+               </form>
+        </header>
+        <div style="clear:both;"></div>
+        <div class="content">
+            <section class="section1">
+                <h1>Facebook giúp bạn kết nối và chia sẻ với mọi người trong cuộc sống của bạn.</h1>
+                <img src="images/logo2.png">
+            </section>
+            <section class="section2">
+                <h1>Đăng ký</h1>
+                <h3>Luôn miễn phí.</h3>
+                <form id="formList" >
+                    <input type="text" class="username" id="ho" placeholder="Họ" required  oninvalid="ktraHo(this);" oninput="clearValidity(this);"  >
+                    <input type="text" class="username" id ="ten" placeholder="Tên" required oninvalid="ktraTen(this);" oninput="clearValidity(this);" >
+                    <input type="text" class="email" id="email" placeholder="Số di động hoặc email" required oninvalid="ktraEmailDt(this);" oninput="ktraEmailDt(this);">
+                    <input type="password" id="pass"  title="Password phải chứa ít nhất 6 kí tự, gồm 1 kí tự in hoa và số" placeholder="Mật khẩu mới" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"  oninvalid="ktraPass(this);" oninput="createNewPassword(this);ktraPass(this);">
+                    <br> <br>
+                        <label>Ngày sinh</label> <br>
+                        <table id="ngaysinh">
+                            <tr>
+                                <td rowspan="2">
+                                    <select id="dayList" required oninvalid="ktraNgay(this);" onchange="clearValidity(this);">
+                                        <option value="" >Ngày</option>
+                                        <option value ="1">1</option>
+                                    </select>
+                                </td>
+                                <td rowspan="2">
+                                    <select id="monthList" required oninvalid="ktraThang(this);" onchange="clearValidity(this);">
+                                        <option  value="">Tháng</option>
+                                        <option value="1">Tháng 1</option>
+                                    </select>
+                                </td>
+                                <td rowspan="2">
+                                   <select id="yearList" required oninvalid="ktraNam(this);" onchange="clearValidity(this);">
+                                        <option  value="">Năm</option>
+                                        <option value="2018">2018</option>
+                                   </select>
+                                </td>
+                                <td rowspan="2"> <a id="ngaysinhWarning" href="#">Tại sao tôi cần cung cấp ngày sinh của mình ?</a>
+                                </td>
+                            </tr>
+                        </table>
+              
+                    <input type="radio" id="firstGender" required name="gender" value="F" oninvalid="ktraGT(this);" onclick="clearValidityG();">Nữ
+                    <input type="radio" name="gender" required value="M" onclick="clearValidityG();" >Nam
+                    <p class="agreement">Bằng cách nhấn vào Đăng ký, bạn đồng ý với <a href="#">Điều khoản</a>, <a href="#">Chính sách dữ liệu</a>, và <a href="#">Chính sách cookie</a> của chúng tôi. Bạn có thể nhận được thông báo của chúng tôi qua SMS và hủy nhận bất kỳ lúc nào.</p>
+                    <input id="downBtn" type="submit" value="Đăng ký">
+                    <p class="agreement"><a href="#">Tạo Trang</a> dành cho người nổi tiếng, nhãn hiệu hoặc doanh nghiệp.</p>
+                </form>
+            </section>
+        </div>
+        <footer><p>Facebook &copy; 2018, site programmed by Do Trung Hieu</p></footer>
+    </body>
+    <script src="script.js" type="text/javascript"></script>
+</html>

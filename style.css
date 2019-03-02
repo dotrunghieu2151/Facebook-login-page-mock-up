@@ -1,0 +1,201 @@
+* {
+    font: 16px/1.5 Arial, Helvetica, sans-serif;
+}
+body  {
+    margin:0;
+    padding:0;
+}
+a {
+    text-decoration:none;
+    color:#0000ff;
+}
+/* header */
+header {
+    background:#3B5998;
+    width:100%;
+    height:90px;
+}
+#logo {
+   float:left;
+   margin-left:15%;
+  
+   
+}
+#logo img {
+    width:auto;
+    height:90px;
+}
+.container {
+    width:30%;
+    margin-left:60%;
+    height:90px;
+}
+.loginBar {
+    margin-top:10px;
+    width:20%;
+    display:inline-block;
+}
+
+#underlie {
+    margin:0;
+    padding:0;
+    position:absolute;
+}
+#underlie a {
+    color:captiontext;
+    font-size:13px;
+}
+.loginBar label {
+    color:white;
+    font-size:12px;
+}
+.loginBar input {
+    width:95%;
+    height:15px;
+    display:table;
+}
+#upperBtn {
+    width:auto;
+    background:#3B5998;
+    border-color:#3B5998;
+}
+/* content*/
+.content {
+    position:relative;
+    width:100%;
+}
+.section1 {
+    float:left;
+    width:14%;
+    margin-left:15.6%;
+}
+.section1 img {
+    height:300px;
+    width:100%;
+}
+.section1 h1 {
+    font-size:20px;
+}
+.section2{
+   margin-left:60%;
+    width:20%;
+}
+.section2 h1 {
+    font-weight:bold;
+    font-size:35px;
+    margin:0;
+}
+.section2 h3 {
+    font-size:20px;
+    position:relative;
+    bottom:22px;
+    margin-bottom:0px;
+}
+.section2 .username {
+    width:47%;
+    margin-left:1%;
+    height:30px;
+    border-radius:5px;
+    border:1px solid #cccccc;
+}
+.section2 .email, .section2 input[type="password"]{
+    width:96.5%;
+    margin:2% 1% 1% 1%;
+    height:30px;
+    border-radius:5px;
+    border:1px solid #cccccc;
+}
+
+ #ngaysinh select {
+    width: 100%;
+    height:30px;
+}
+#ngaysinhWarning {
+    font-size:12px;
+}
+
+#ngaysinhWarning:hover{
+    color:chocolate;
+}
+input[type="radio"] {
+    width:8%;
+    height:20px;
+}
+.agreement {
+    font-size:10px;
+}
+.agreement a {
+    font-size:10px;
+}
+#downBtn {
+   color:white;
+   width:40%;
+   height:45px;
+   background:#006600;
+   border-radius:10px;
+}
+/* footer */
+footer {
+    text-align: center;
+    clear:both;
+    margin-top:30%;
+}
+@media screen and (max-width:1440px){
+    #logo {
+        margin-left:15%;
+    }
+    .section1 {
+        margin-left:15%;
+        width:30%;
+    }
+    .container {
+        margin-left:57%;
+        width:30%;
+        
+    }
+    .loginBar {
+    margin-top:10px;
+    width:38%;
+    display:inline-block;
+}
+.section2 {
+    margin-left:57%;
+    width:30%;
+}
+footer {
+    clear:both;
+}
+.agreement {
+    font-size:15px;
+}
+.agreement a {
+    font-size: 15px;
+}
+#ngaysinh {
+    width:600px;
+}
+#ngaysinhWarning {
+    font-size : 14px;
+}
+}
+.newPassword , .newEmail{
+    position:relative;
+    animation-name: passAni;
+    animation-duration:2s;
+    animation-iteration-count:1;
+}
+@keyframes passAni {
+    0% {top:-30px; opacity:0;}
+    100%{top:0; opacity:1;}
+}
+select:invalid:focus {
+    outline:none;
+    border: 2px solid #ff0000; 
+}
+input:invalid:focus {
+    background-image:url('images/logo3.png');
+    background-position: right top;
+    background-repeat: no-repeat;
+    border:2px solid #ff0000;
+    outline:none;
+}
